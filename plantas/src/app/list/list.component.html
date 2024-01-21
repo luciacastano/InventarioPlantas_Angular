@@ -1,0 +1,13 @@
+<div class="w-80 h-4 ml-56 mt-52 border border-cyan-600">
+    <h1 class="text-center mt-5 text-xl font-bold text-green-600">Angular Inventory List</h1>
+    <ul>
+        <li *ngFor="let data of saveData; let i = index" class="flex ml-4 mt-5 items-center justify-between text-lg" [class.bg-yellow-200]="data['favorite']">
+            <!-- let i = index para saber la posición de cada elemto y luego poder eliminarlo o resaltarlo -->
+            {{ data['name'] }} | {{ data['type'] }}
+            <div>
+                <button (click)="deletePlant(i)" class="mr-3"><img src="https://i.pinimg.com/564x/fa/12/e2/fa12e2d4490f6672a5f61bea3578b8cd.jpg" alt="delete" class="w-6 h-6"></button>
+                <button (click)="favorite(i)" class="mr-5"><img src="https://i.pinimg.com/564x/4d/d9/fc/4dd9fc873d89856aa14b88184411ec20.jpg" alt="favorite" class="w-8 h-8"></button> 
+            </div>    
+        </li>
+    </ul>
+</div>
