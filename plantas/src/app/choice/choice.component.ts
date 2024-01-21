@@ -21,20 +21,20 @@ export class ChoiceComponent {
   ) {}
 
   // SELECCION DE PLANTA (ARBUSTO | ARBOL)
-  public select(option: string) {
+  public select(option: string): void {
     this.selected = option;
     
     console.log(this.input);
   }
   
   // VACIAR FORMULARIO
-  public deleteForm() {
+  public deleteForm(): void {
     this.input = '';
     this.selected = '';
   }
 
   // GUARDAR LAS PLANTAS CREADAS EN ARRAY EN data.service
-  public arrayPlants() {
+  public arrayPlants(): void {
     if (this.input && this.selected) {
       const newElement: Data = {
         name: this.input,
