@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Data } from '@angular/router';
+import { Data } from '../interface/data';
 import { DataService } from '../service/data.service';
 
 @Component({

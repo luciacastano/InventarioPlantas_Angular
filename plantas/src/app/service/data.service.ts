@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Data } from '@angular/router';
+import { Data } from '../interface/data';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class DataService {
 
   public newData(data: Data): void {
     this.saveData.push(data); // push - añade la nueva planta al array
-    this.saveData.sort((a, b) => a['name'].localeCompare(b['name']));
+    this.saveData.sort((a, b) => a.name.localeCompare(b.name));
     /* 
      * sort - ordena
      * a y b elementos a comparar por localeCompare

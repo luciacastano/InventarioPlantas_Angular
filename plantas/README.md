@@ -1,6 +1,6 @@
 # Plantas
 
-Este proyecto implementa una aplicación para almacenar plantas. Consta de dos partes: la primera, dónde se inserta el nombre de la planta y elegimos el tipo de la misma y la opción de borrar o guardar la planta; la segunda, un listado de las plantas que vamos creando con l opción de eliminarlas de la lista o marcarlas como favorita.
+Este proyecto implementa una aplicación para almacenar plantas. Consta de dos partes: la primera, donde se inserta el nombre de la planta y elegimos el tipo de la misma y la opción de borrar o guardar la planta; la segunda, un listado de las plantas que vamos creando con la opción de eliminarlas de la lista o marcarlas como favorita.
 
 ## Instalar Proyecto
 

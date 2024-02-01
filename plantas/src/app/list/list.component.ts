@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Data } from '@angular/router';
+import { Data } from '../interface/data';
 import { DataService } from '../service/data.service';
 import { NgFor } from '@angular/common';
 
@@ -34,10 +34,6 @@ export class ListComponent {
   public favorite(index: number): void {
     const plant = this.saveData[index];
 
-    if (plant['favorite']) {
-      plant['favorite'] = false;  // si está marcada, desmarcarla.
-    } else {
-      plant['favorite'] = true;   // Si no está marcada, marcarla.
-    } 
+    plant.favorite = !plant.favorite;
   }
 }
